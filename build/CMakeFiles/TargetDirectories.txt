@@ -1,0 +1,3 @@
+/home/pave/Documents/network_analyzer/build/CMakeFiles/dnsniffer.dir
+/home/pave/Documents/network_analyzer/build/CMakeFiles/edit_cache.dir
+/home/pave/Documents/network_analyzer/build/CMakeFiles/rebuild_cache.dir
