@@ -1,1 +1,0 @@
-/usr/bin/cc -Wl,--dependency-file=CMakeFiles/dnsniffer.dir/link.d CMakeFiles/dnsniffer.dir/src/main.c.o CMakeFiles/dnsniffer.dir/src/banner.c.o CMakeFiles/dnsniffer.dir/src/capture.c.o CMakeFiles/dnsniffer.dir/src/dns_handler.c.o -o dnsniffer
