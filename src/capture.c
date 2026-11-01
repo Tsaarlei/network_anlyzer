@@ -22,8 +22,7 @@
  * port 53, stores the offset of the DNS payload in *payload_off.
  * Every layer is bounds-checked against `size`.
  */
-static bool locate_dns_payload(const unsigned char *buf, size_t size,
-                               size_t *payload_off) {
+static bool locate_dns_payload(const unsigned char *buf, size_t size, size_t *payload_off) {
     if (size < sizeof(struct ethhdr)) return false;
 
     const struct ethhdr *eth = (const struct ethhdr *)buf;
@@ -67,8 +66,7 @@ int capture_run(int sock) {
         struct sockaddr_ll from;
         socklen_t fromlen = sizeof(from);
 
-        ssize_t size = recvfrom(sock, buffer, sizeof(buffer), 0,
-                                (struct sockaddr *)&from, &fromlen);
+        ssize_t size = recvfrom(sock, buffer, sizeof(buffer), 0,(struct sockaddr *)&from, &fromlen);
         if (size < 0) {
             perror("recvfrom");
             return 1;
